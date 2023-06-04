@@ -1,3 +1,6 @@
+--liquibase formatted sql
+
+--changeset mukhomedyarov:1
 insert into netology.customers (name, surname, age, phone_number)
 values ('Максим', 'Ткачук', 60, '+79159554378'),
 ('Алексей', 'Петров', 28, '+79153611873'),

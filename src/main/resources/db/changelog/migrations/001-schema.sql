@@ -1,3 +1,6 @@
+--liquibase formatted sql
+
+--changeset mukhomedyarov:1
 create table netology.customers
 (
     id int auto_increment primary key,
@@ -17,4 +20,5 @@ create table netology.orders
     foreign key (customer_id) references customers (id) on delete cascade
 );
 
-
+--rollback drop table netology.customers;
+--rollback drop table netology.orders;
